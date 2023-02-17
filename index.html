@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Month-4 Exam</title>
+</head>
+<body>
+
+    
+<!-- HEADER -->
+    <header class="d-flex pt-3 ps-5 header">
+        <img src="assets/logo.svg" class="me-5 mt-2">
+        <input type="search" placeholder="Search" class="form-control w-50 me-5 mt-2" id="search-input">
+
+        <div class="position-absolute top-1 end-0">
+            <a href="#" onclick="myFunction()" class="mt-4 me-3"><img src="assets/lightdarkmode.svg" width="30px"></a>
+            <a href="html/loginpage.html" class="btn btn-primary mt-2 me-3">Log out</a>
+        </div>
+    </header>
+
+
+
+<!-- SHow results -->
+<div class="pt-3 bg-light" style="width: 100%; height: 56px;">
+    <p class="lightmode" style="margin-left: 360px;">Showing 18 Result(s)</p>
+    <!-- <input type="date"> -->
+</div>
+
+<!-- Wrapper div start -->
+<div class="d-flex ">
+
+<!-- BOOKMARK -->
+    <div class="bookmark-wapper " >
+        <h2 class="ps-2 lightmode">Bookmarks</h2>
+        <p class="ps-2 lightmode">If you don’t like to read, you haven’t found the right book</p>
+
+        <div class="card-wrapper mt-5" style="width: 270px;">
+            <div class="card m-3" >
+                <div class="card-body">
+                    <div class="card-title lightmode">Name</div>
+                    <div class="card-text lightmode">Lorem, ipsum dolor.</div>
+                    <a href="#" ><img src="assets/bookicon.svg"></a>
+                    <a href="#"><img src="assets/deleteicon.svg"></a>
+                </div>
+            </div>
+    
+            <div class="card mt-1 m-3">
+                <div class="card-body">
+                    <div class="card-title lightmode">Name</div>
+                    <div class="card-text lightmode">Lorem, ipsum dolor.</div>
+                    <a href="#" ><img src="assets/bookicon.svg"></a>
+                    <a href="#"><img src="assets/deleteicon.svg"></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+   
+
+<!-- Cards -->
+    <div class="cards row ms-5 mt-5"></div>
+
+
+
+    <template id="template">
+    <div class="col-3 m-4">
+        <div class="card" style="width: 300px;">
+            <img src="" class="card-img-top" alt="..." >
+            <div class="card-body">
+                <h5 class="card-title lightmode">Card title</h5>
+                <p class="card-text lightmode">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text  date">Date</p>
+                <a href="#" class="btn btn-warning me-4">Bookmark</a>
+                <a href="#" class="showmodal  btn btn-info text-light" data-id>More info</a>
+                <a href="#" class="btn btn-secondary text-light form-control mt-1">Read</a>
+            </div>
+        </div>
+    </div>
+    </template>
+
+
+
+    <!-- MODAL WRAPPER -->
+    <div class="modal-wrapper hidden">
+        <div class="d-flex modal-header mt-3">
+            <h3 class="modal-title">Cisgender man</h2>
+            <a href="#" id="close-modal"><img src="assets/modalclose.svg" ></a>
+        </div>
+        <div class="modal-body">
+            <img src="https://picsum.photos/200/100" class="card-img-top mt-5 modal-img" alt="..." >
+            <p class="text-center mt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quo obcaecati assumenda tempore expedita earum nostrum voluptatem minus atque asperiores.</p>
+        </div>
+    </div>
+    <!-- MODAL END -->
+
+
+<!-- Wrapper div end -->
+</div>
+
+
+
+<script src="js/findElement.js"></script>
+<script src="js/main.js"></script>
+<!-- <script src="js/darkmode.js"></script> -->
+</body> 
+</html>

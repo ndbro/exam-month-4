@@ -1,0 +1,11 @@
+body{
+    background-image: url(../assets/library-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginbtn{
+    position: absolute;
+    right: 45%;
+    left: 45%;
+}
